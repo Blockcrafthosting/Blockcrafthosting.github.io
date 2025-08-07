@@ -1,0 +1,15 @@
+
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/dashboard.html"
+  to = "/login.html"
+  status = 302
+  force = true
+  conditions = { Role = ["guest"] }
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
