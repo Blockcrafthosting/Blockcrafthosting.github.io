@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+header {
+  background: #1e1e2f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.header-fondo {
+  position: relative;
+  background: url('../img/minecraft-block.png') center center/150px no-repeat, #a00000;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(160, 0, 0, 0.7);
+  z-index: 1;
+}
+.header-fondo h1,
+.header-fondo p {
+  position: relative;
+  z-index: 2;
+}
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.categoria {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.categoria:hover {
+  transform: translateY(-5px);
+}
+.planes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+.plan {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+.precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.formulario {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.formulario label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.formulario input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0.3rem;
+}
+.formulario button {
+  margin-top: 1.5rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.panel-header {
+  background: #1e1e2f;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.panel-header nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.panel-main {
+  padding: 2rem;
+}
+.servidores {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.servidor {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.online { color: green; font-weight: bold; }
+.offline { color: red; font-weight: bold; }
+.nuevo-servidor {
+  margin-top: 2rem;
+  background: #007bff;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
