@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - BlockCraftHosting</title>
+  <style>
+    body { background: linear-gradient(120deg, #8b0000, #ff4d4d); font-family: Arial, sans-serif; color: white;
+           display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+    .form-container { background: rgba(0, 0, 0, 0.7); padding: 30px; border-radius: 15px; width: 350px;
+                      box-shadow: 0 0 15px black; text-align: center; }
+    h1 { margin-bottom: 20px; color: #ffd700; }
+    input { width: 90%; padding: 12px; margin: 10px 0; border: none; border-radius: 8px; outline: none; }
+    button { margin-top: 15px; width: 95%; padding: 12px; border: none; border-radius: 8px;
+             background: #ffd700; color: black; font-weight: bold; cursor: pointer; transition: 0.3s; }
+    button:hover { background: white; }
+    a { display: block; margin-top: 15px; color: #ffd700; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Login</h1>
+    <form action="procesar_login.php" method="post">
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+      <input type="password" name="password" placeholder="Contraseña" required>
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+    <a href="registro.html">¿No tienes cuenta? Regístrate</a>
+    <a href="index.html">⬅ Volver al inicio</a>
+  </div>
+</body>
+</html>
