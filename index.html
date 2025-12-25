@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BlockCraft Hosting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+  <h1>BLOCKCRAFT <span>HOSTING</span></h1>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#minecraft">Minecraft</a>
+    <a href="#vps">VPS</a>
+    <a href="#planes">Planes</a>
+    <a href="#login">Login</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <h2>El poder de tu servidor <span>Minecraft</span> en tus manos</h2>
+  <p>
+    Servidores inspirados en el End: potencia, estabilidad y control total,
+    como el aliento del Dragón.
+  </p>
+
+  <div class="hero-buttons">
+    <a href="#planes" class="btn-primary">Contratar</a>
+    <a href="#login" class="btn-secondary">Registrarse</a>
+  </div>
+</section>
+
+<!-- MINECRAFT -->
+<section id="minecraft" class="section">
+  <h2>🟪 Servidores Minecraft</h2>
+  <p class="desc">
+    Desde Survival hasta grandes Networks. Infraestructura pensada para
+    mundos persistentes y comunidades activas.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Survival</h3>
+      <p>Perfecto para amigos, SMP y vanilla.</p>
+    </div>
+    <div class="card">
+      <h3>Roleplay</h3>
+      <p>Ideal para CityRP, economía y plugins.</p>
+    </div>
+    <div class="card">
+      <h3>Network</h3>
+      <p>Multi-servers con Bungee y Velocity.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PLANES MINECRAFT -->
+<section id="planes" class="pricing">
+  <h2>Planes Minecraft</h2>
+
+  <div class="plans">
+    <div class="plan">
+      <h3>Starter</h3>
+      <p class="price">$2.99/mo</p>
+      <ul>
+        <li>2 GB RAM</li>
+        <li>1 vCore</li>
+        <li>10 GB NVMe</li>
+      </ul>
+      <button onclick="openPanel()">Ir al Panel</button>
+    </div>
+
+    <div class="plan featured">
+      <h3>Pro</h3>
+      <p class="price">$5.99/mo</p>
+      <ul>
+        <li>4 GB RAM</li>
+        <li>2 vCores</li>
+        <li>25 GB NVMe</li>
+      </ul>
+      <button onclick="openPanel()">Ir al Panel</button>
+    </div>
+
+    <div class="plan">
+      <h3>Premium</h3>
+      <p class="price">$9.99/mo</p>
+      <ul>
+        <li>8 GB RAM</li>
+        <li>4 vCores</li>
+        <li>50 GB NVMe</li>
+      </ul>
+      <button onclick="openPanel()">Ir al Panel</button>
+    </div>
+  </div>
+</section>
+
+<!-- VPS -->
+<section id="vps" class="section">
+  <h2>🟥 Servidores VPS</h2>
+
+  <div class="plans">
+    <div class="plan">
+      <h3>VPS Basic</h3>
+      <p class="price">$12/mo</p>
+      <ul>
+        <li>2 vCPU</li>
+        <li>4 GB RAM</li>
+        <li>80 GB SSD</li>
+      </ul>
+      <button onclick="openPanel()">Panel VPS</button>
+    </div>
+
+    <div class="plan">
+      <h3>VPS Pro</h3>
+      <p class="price">$24/mo</p>
+      <ul>
+        <li>4 vCPU</li>
+        <li>8 GB RAM</li>
+        <li>160 GB SSD</li>
+      </ul>
+      <button onclick="openPanel()">Panel VPS</button>
+    </div>
+  </div>
+</section>
+
+<!-- LOGIN -->
+<section id="login" class="login">
+  <h2>Área de Clientes</h2>
+  <input id="user" placeholder="Usuario">
+  <input id="pass" type="password" placeholder="Contraseña">
+  <button onclick="login()">Iniciar sesión</button>
+  <p id="msg"></p>
+</section>
+
+<!-- PANEL -->
+<div id="panel" class="panel hidden">
+  <h2>Panel de Control</h2>
+  <p>Estado del servidor: 🟢 Online</p>
+  <button>Iniciar</button>
+  <button>Reiniciar</button>
+  <button>Apagar</button>
+  <button onclick="closePanel()">Cerrar</button>
+</div>
+
+<a href="https://wa.me/50700000000" class="whatsapp" target="_blank">💬</a>
+
+</body>
+  </html>
