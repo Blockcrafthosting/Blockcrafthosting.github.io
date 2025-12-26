@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockCraft Hosting - Servidores Minecraft y VPS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">BLOCK<span>CRAFT</span></div>
+        <nav>
+            <ul>
+                <li><a href="#minecraft">Minecraft</a></li>
+                <li><a href="#vps">VPS</a></li>
+                <li><a href="#panel">El Panel</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button id="btnOpenLogin" class="btn-login">Iniciar Sesión</button>
+            <button id="btnOpenRegister" class="btn-register">Registrarse</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>El poder de tu servidor <span>Minecraft</span> en tus manos</h1>
+        <p>Rendimiento dedicado, backups automáticos, soporte 24/7 y un panel fácil de usar.</p>
+        <div class="hero-badges">
+            <span>⚡ 99.9% Uptime</span>
+            <span>📂 Backups diarios</span>
+            <span>💬 Soporte Discord</span>
+        </div>
+    </section>
+
+    <section id="minecraft" class="pricing-section">
+        <div class="container">
+            <div class="card">
+                <h3>Starter</h3>
+                <div class="price">$2.99<span>/mo</span></div>
+                <p class="specs">2 GB • 1 vCore</p>
+                <ul>
+                    <li>10 GB almacenamiento</li>
+                    <li>Copias de seguridad automáticas</li>
+                    <li>1-click plugins</li>
+                </ul>
+                <button class="btn-buy" data-product="Minecraft Starter" data-price="2.99">Contratar</button>
+            </div>
+            <div class="card highlighted">
+                <h3>Pro</h3>
+                <div class="price">$5.99<span>/mo</span></div>
+                <p class="specs">4 GB • 2 vCores</p>
+                <ul>
+                    <li>25 GB almacenamiento</li>
+                    <li>Copias de seguridad automáticas</li>
+                    <li>Panel Pterodactyl</li>
+                </ul>
+                <button class="btn-buy" data-product="Minecraft Pro" data-price="5.99">Contratar</button>
+            </div>
+            <div class="card">
+                <h3>Premium</h3>
+                <div class="price">$9.99<span>/mo</span></div>
+                <p class="specs">8 GB • 4 vCores</p>
+                <ul>
+                    <li>50 GB almacenamiento</li>
+                    <li>Copias de seguridad automáticas</li>
+                    <li>Soporte Prioritario</li>
+                </ul>
+                <button class="btn-buy" data-product="Minecraft Premium" data-price="9.99">Contratar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="panel" class="panel-preview">
+        <h2>Panel de Control Profesional</h2>
+        <p>Administra tu servidor con la potencia de Pterodactyl.</p>
+        <div class="panel-screen">
+            <div class="panel-header">
+                <div class="dots"><span></span><span></span><span></span></div>
+                <span>blockcraft-panel.com</span>
+            </div>
+            <div class="panel-body">
+                <div class="sidebar"></div>
+                <div class="main-content">
+                    <div class="stats-row">
+                        <div class="stat-box">CPU: 12%</div>
+                        <div class="stat-box">RAM: 2.4GB / 4GB</div>
+                    </div>
+                    <div class="console">
+                        > Server marked as running...<br>
+                        > Loading world "survival"...<br>
+                        > Done! For help, type "help"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Acceso</h2>
+            <form id="authForm">
+                <div id="groupUser" style="display:none;">
+                    <input type="text" placeholder="Usuario" class="form-input">
+                </div>
+                <input type="email" placeholder="Correo electrónico" class="form-input" required>
+                <input type="password" placeholder="Contraseña" class="form-input" required>
+                <button type="submit" class="btn-submit" id="btnSubmitForm">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
