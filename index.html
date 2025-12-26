@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockCraft Hosting - Servidores Minecraft y VPS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">BLOCK<span>CRAFT</span></div>
+        <nav>
+            <ul>
+                <li><a href="#minecraft">Minecraft</a></li>
+                <li><a href="#vps">VPS</a></li>
+                <li><a href="#">Soporte</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button id="btnOpenLogin" class="btn-login">Iniciar Sesión</button>
+            <button id="btnOpenRegister" class="btn-register">Registrarse</button>
+        </div>
+    </header>
+
+    <section id="minecraft" class="pricing-section">
+        <h2>Servidores Minecraft</h2>
+        <p>El poder de tu servidor en tus manos</p>
+        <div class="container">
+            <div class="card">
+                <h3>Starter</h3>
+                <div class="price">$2.99/mo</div>
+                <ul>
+                    <li>2 GB RAM | 1 vCore</li>
+                    <li>10 GB NVMe SSD</li>
+                    <li>Copias de seguridad</li>
+                </ul>
+                <button class="btn-buy" data-product="Minecraft Starter">Contratar</button>
+            </div>
+            <div class="card highlighted">
+                <h3>Pro</h3>
+                <div class="price">$5.99/mo</div>
+                <ul>
+                    <li>4 GB RAM | 2 vCores</li>
+                    <li>25 GB NVMe SSD</li>
+                    <li>Panel Pterodactyl</li>
+                </ul>
+                <button class="btn-buy" data-product="Minecraft Pro">Contratar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="vps" class="pricing-section vps-bg">
+        <h2>Servidores VPS</h2>
+        <p>Rendimiento dedicado y hardware NVMe</p>
+        <div class="container">
+            <div class="card">
+                <h3>VPS Cloud I</h3>
+                <div class="price">$12.99/mo</div>
+                <ul>
+                    <li>8 GB RAM DDR5</li>
+                    <li>4 vCores Dedicados</li>
+                    <li>Acceso Root Completo</li>
+                </ul>
+                <button class="btn-buy" data-product="VPS Cloud I">Contratar VPS</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Iniciar Sesión</h2>
+            <form id="authForm">
+                <div id="groupUser" style="display:none;">
+                    <input type="text" placeholder="Usuario" class="form-input">
+                </div>
+                <input type="email" placeholder="Correo electrónico" class="form-input" required>
+                <input type="password" placeholder="Contraseña" class="form-input" required>
+                <button type="submit" class="btn-submit" id="btnSubmitForm">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
