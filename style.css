@@ -1,0 +1,103 @@
+/* Configuración General */
+body {
+    background-color: #0f0c1d; /* Fondo oscuro similar a las capturas */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff8c00; /* Naranja corporativo */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Botones de Registro e Inicio */
+.btn-login {
+    border: 1px solid #ff8c00;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-register {
+    background-color: #ff8c00;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white !important;
+}
+
+/* Tarjetas de Planes */
+.pricing-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: #1a162e;
+    border: 1px solid #333;
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.highlighted {
+    border: 2px solid #ff8c00; /* Resalta el plan Pro como en la imagen */
+}
+
+.card h3 { color: #ff8c00; }
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+}
+
+.card li { margin-bottom: 10px; }
+
+.btn-buy {
+    background: #ff8c00;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
