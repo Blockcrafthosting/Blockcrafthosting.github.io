@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockCraft Hosting | v1.0 Updates</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-overlay"></div>
+
+    <div class="main-wrapper">
+        <header class="main-header">
+            <div class="lion-logo-glow"></div>
+            <h1>BLOCKCRAFT <span class="neon-purple">HOSTING</span></h1>
+            <p class="version-tag">v1.0 UPDATES</p>
+        </header>
+
+        <div class="content-grid">
+            <section class="panel plans-container">
+                <h2 class="panel-title">SERVER PLANS</h2>
+                <div class="plans-grid">
+                    <div class="plan-card neon-blue-border">
+                        <div class="plan-icon basic"></div>
+                        <h3>BASIC</h3>
+                        <p class="price">$10.00</p>
+                        <button class="btn-buy blue" onclick="processPurchase('BASIC', 10)">COMPRAR</button>
+                    </div>
+                    <div class="plan-card neon-purple-border">
+                        <div class="badge">POPULAR</div>
+                        <div class="plan-icon deluxe"></div>
+                        <h3>DELUXE</h3>
+                        <p class="price">$19.00</p>
+                        <button class="btn-buy purple" onclick="processPurchase('DELUXE', 19)">COMPRAR</button>
+                    </div>
+                    <div class="plan-card neon-blue-border">
+                        <div class="plan-icon ultimate"></div>
+                        <h3>ULTIMATE</h3>
+                        <p class="price">$29.00</p>
+                        <button class="btn-buy blue" onclick="processPurchase('ULTIMATE', 29)">COMPRAR</button>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="side-panel">
+                <div class="auth-box">
+                    <button class="btn-auth neon-purple" onclick="toggleModal('register')">REGISTER</button>
+                    <button class="btn-auth neon-purple" onclick="toggleModal('login')">LOGIN</button>
+                </div>
+
+                <div class="panel ticket-system">
+                    <h3>SUPPORT TICKET</h3>
+                    <div class="ticket-input-group">
+                        <input type="text" id="ticketSearch" placeholder="Buscar o nuevo ticket...">
+                        <button class="btn-action" onclick="newTicket()">NEW</button>
+                    </div>
+                    <div class="ticket-stats">
+                        <div class="stat"><span class="dot purple"></span> RESOLVING <span class="val">(2)</span></div>
+                        <div class="stat"><span class="dot blue"></span> OPEN <span class="val">(5)</span></div>
+                        <div class="stat"><span class="dot cyan"></span> RESOLVED <span class="val">(128)</span></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="ticker-footer">
+        <div class="ticker-content">
+            SISTEMA ACTIVO • ACTUALIZACIÓN V1.0 COMPLETADA • NUEVOS NODOS DISPONIBLES • SOPORTE 24/7 • BLOCKCRAFT HOSTING • DISEÑO GAMER LION EDITION
+        </div>
+    </footer>
+
+    <script>
+        function processPurchase(plan, price) {
+            alert(`🛒 Redirigiendo a la pasarela de pago...\nPlan: ${plan}\nPrecio: $${price}.00`);
+        }
+
+        function newTicket() {
+            const msg = document.getElementById('ticketSearch').value;
+            if(msg) {
+                alert(`✅ Ticket creado: "${msg}"\nUn agente te responderá pronto.`);
+                document.getElementById('ticketSearch').value = '';
+            } else {
+                alert("Por favor, escribe el asunto de tu problema.");
+            }
+        }
+
+        function toggleModal(type) {
+            alert(`Abriendo panel de ${type.toUpperCase()} de BlockCraft...`);
+        }
+    </script>
+</body>
+</html>
